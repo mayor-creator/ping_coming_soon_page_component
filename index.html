@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./app/scss/style.css">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+
+<body>
+  <main class="main_page_component">
+    <header>
+      <img src="./images/logo.svg" class="logo">
+      <h1>We are launching <strong>soon!</strong></h1>
+      <p>Subscribe and get notified</p>
+    </header>
+
+    <form class="wrapper" id="form">
+      <input type="email" name="email_address" id="email_address" placeholder="Your email address...">
+      <p class="invalid_email" id="error_message" hidden></p>
+      <button type="submit">Notify Me</button>
+    </form>
+
+    <img src="./images/illustration-dashboard.png" class="illustration_image" alt="dashboard_image">
+
+    <footer class="footer_icons">
+      <div class="icons">
+        <div class="round_icons">
+          <img src="./images/facebook.png" class="icon">
+        </div>
+        <div class="round_icons">
+          <img src="./images/twitter.png" class="icon">
+        </div>
+        <div class="round_icons">
+          <img src="./images/icons8-instagram-24.png" class="icon">
+        </div>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="./app/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+@use "./variables" as v;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: v.$font_size;
+    font-family: v.$font_family;
+    @include v.mobile{
+        font-size: 1rem;
+    }
+}
+
+.main_page_component {
+    max-width: 100%;
+}
+
+h1,p{
+    text-align: center;
+    color: v.$gray;
+    font-weight: 300;
+}
+
+strong{
+    color: v.$very_dark_blue;
+    font-weight: 700;
+}
+
+.logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper{
+    margin: 2.8125rem 0rem 5.625rem 0rem;
+}
+
+input{
+    height: 3.75rem;
+    width: 26.875rem;
+    border-radius: 3.125rem;
+    border: 0.0625rem solid v.$pale_blue;
+    padding-left: 0.9375rem;
+    @include v.mobile{
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+        width: 340px;
+    }
+}
+
+.invalid_email{
+    color: v.$light_red;
+}
+
+button{
+    height: 3.75rem;
+    width: 12.5rem;
+    border-radius: 3.125rem;
+    border: none;
+    background-color: v.$primary_color;
+    color: white;
+    @include v.mobile{
+        display: block;
+        margin: auto;
+        width: 340px;
+    }
+}
+
+.illustration_image{
+    height: 24.3125rem;
+    width: 43.0625rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3.125rem;
+    @include v.mobile{
+        height: 194.5px;
+        width: 344.5px;
+    }
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round_icons{
+    border-radius: 50%;
+    border: 0.0625rem solid v.$pale_blue;
+    height: 3.125rem;
+    width: 3.125rem;
+    margin: 0.625rem;
+    padding: 0.625rem 0rem 0.625rem 0rem;
+}
+
+.icon{
+    height: 1.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
